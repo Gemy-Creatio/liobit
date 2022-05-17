@@ -11,11 +11,13 @@ class ContactRequests(models.Model):
 
 
 class CategoryOfBusiness(models.Model):
-    Name = models.CharField(max_length=255, null=True, blank=True)
-    description = models.TextField(null=True, blank=True)
+    Name_ar = models.CharField(max_length=255, null=True, blank=True)
+    description_ar = models.TextField(null=True, blank=True)
+    Name_en = models.CharField(max_length=255, null=True, blank=True)
+    description_en = models.TextField(null=True, blank=True)
 
     def __str__(self):
-        return self.Name
+        return self.Name_ar
 
 
 class Projects(models.Model):

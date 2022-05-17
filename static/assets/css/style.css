@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #ffd584;
+  color: #f4f4f4;
   text-decoration: none;
 }
 
@@ -119,6 +119,21 @@ font-family: 'Cairo', sans-serif;
   }
 }
 
+.no-btn{
+  border: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 1rem;
+  color: #ffc451;
+}
+.no-btn:hover{
+  color: #fff;
+}
+
+
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -129,7 +144,7 @@ font-family: 'Cairo', sans-serif;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: #fff;
 }
 
 #header .logo {
@@ -153,7 +168,7 @@ font-family: 'Cairo', sans-serif;
 }
 
 #header .logo a {
-  color: #fff;
+  color: #ffc451;
 }
 
 #header .logo a span {
@@ -161,7 +176,8 @@ font-family: 'Cairo', sans-serif;
 }
 
 #header .logo img {
-  max-height: 12vh;
+  max-height: 9vh;
+  max-width: 5rem;
 }
 
 /*--------------------------------------------------------------
@@ -219,7 +235,7 @@ font-family: 'Cairo', sans-serif;
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #ffc451;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -231,7 +247,7 @@ font-family: 'Cairo', sans-serif;
 }
 
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #ffc451;
+  color: #fff;
 }
 
 .navbar .dropdown ul {
@@ -301,7 +317,7 @@ font-family: 'Cairo', sans-serif;
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #ffc451;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -375,7 +391,13 @@ font-family: 'Cairo', sans-serif;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
-
+.section-title p {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: 'Cairo', sans-serif;
+}
 .navbar-mobile .dropdown ul li {
   min-width: 200px;
 }
@@ -554,13 +576,11 @@ font-family: 'Cairo', sans-serif;
 }
 
 .section-title p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #151515;
+  color: #aaaaaa;
+  font-family: 'Cairo', sans-serif;
 }
 
 /*--------------------------------------------------------------

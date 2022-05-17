@@ -10,7 +10,12 @@
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
-          <h1>عن الشركة<span>.</span></h1>
+          {% if LANGUAGE_CODE == 'ar' %}
+          <h1 class="text-white">عن الشركة<span>.</span></h1>
+          {% else %}
+          <h1 class="text-white">About Us <span>.</span></h1>
+
+          {% endif %}
         </div>
       </div>
 
@@ -20,51 +25,150 @@
 
     <section id="counts" class="counts">
       <div class="container aos-init aos-animate" data-aos="fade-up">
-
+        <div class="section-title">
+          {% if LANGUAGE_CODE == 'ar' %}
+          <h2>خدماتنا </h2>
+          <p>إذا كنت تريد أن يكون عملك قادرا على المنافسة في السوق الرقمية اليوم ، فيجب أن يكون لديك وجود جيد عبر الإنترنت. والطريقة الوحيدة لتحقيق ذلك من خلال بناء استراتيجية تسويق رقمي قوية. بدون خطة تسويق قوية عبر الإنترنت ، من المرجح أن تكون جهودك التسويقية في كل مكان ، مما يجعل حملات التسويق الرقمي أقل فعالية بشكل عام.
+            والجمهور المستهدف في الاعتبار ، فأنت تعد عملك لتحقيق النجاح الحقيقي. ولكن الجزء الأكثر أهمية لتشغيل الإعلانات على Google التي تظهر عندما يبحث الأشخاص عن المنتجات والخدمات التي تقدمها
+            تحقيق هذا النجاح هو استخدام الأدوات والخدمات المناسبة، مثل تلك التي نقدمها في يونيك الرياض!
+          </p>
+          {% else %}
+          <h2> Our Services </h2>
+           <p>
+             If you want your business to be competitive in today’s digital marketplace, you have to have a good online presence. And the only way to achieve that through building a strong digital marketing strategy. Without a solid online marketing plan, then your marketing efforts will most likely be all over the place, causing your digital marketing campaigns to be less effective overall. And as a small ecommerce business or any firm doing business online, the only way you will see sustainable growth for your business is through maximizing your marketing efforts the right way.
+            When you have a specific plan, goal, and target audience in mind, you are setting your business up for true success. But the most important part to run advertisements on Google that show when people are searching for the products and services you offer
+            achieving this success is using the right tools and services, like the ones we offer at Unique Riyadh!
+          </p>
+          {% endif %}
+        </div>
         <div class="row no-gutters">
           <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start aos-init aos-animate" data-aos="fade-right" data-aos-delay="100"></div>
-          <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-xl-5 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
             <div class="content d-flex flex-column justify-content-center">
-              <img src="{%  static 'images/logo.png' %}" class="img-fluid" style="width: 7rem;height: 19vh;">
+              {% if LANGUAGE_CODE == 'ar' %}
+              <h4> إدارة وسائل التواصل الاجتماعي</h4>
 
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box d-flex">
-                    <i class="bi bi-emoji-smile"></i>
-                   <div class="d-flex flex-column">
-                                          <div class="d-flex flex-column">
-                                         <p><strong>عملائنا</strong></p>
-                        <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="0" class="purecounter">65</span>
-                                          </div>
-                   </div>
-                  </div>
-                </div>
+              <p>اليوم ، تعد وسائل التواصل الاجتماعي واحدة من أقوى الأدوات التي يمكن لأي عمل تجاري استخدامها. ذلك لأن هناك ما يقرب من 3.6 مليار شخص نشطين على وسائل التواصل الاجتماعي. وبالتالي ، لا بد أن يكون عملاؤك المحتملون هناك. ولكن لا يكفي فقط إرفاق اسم شركتك بحساب على وسائل التواصل الاجتماعي. إذا كنت على وسائل التواصل الاجتماعي  لكن الكثير من أصحاب الأعمال ليس لديهم الوقت أو المعرفة لتشغيل حساباتهم على وسائل التواصل الاجتماعي بفعالية بمفردهم. هذا هو المكان الذي يمكننا المساعدة فيه!  </p>
+         
+              {% else %}
+     
+              <h4>Social Media Management </h4>
 
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box d-flex">
-                    <i class="bi bi-journal-richtext"></i>
-                                         <div class="d-flex flex-column">
-                    <p><strong>المشاريع</strong></p>
-                    <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="0" class="purecounter">85</span>
-                                         </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box d-flex">
-                    <i class="bi bi-clock"></i>
-                                         <div class="d-flex flex-column">
-                    <p><strong>سنين الخبره</strong></p>
-                    <span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="0" class="purecounter">35</span>
-                                         </div>
-                  </div>
-                </div>
-
-              </div>
+              <p>Today, social media is one of the most powerful tools any business can use. That’s because there are nearly 3.6 billion people active on social media. Thus, your potential customers are bound to be there. But it’s not enough to just have your company name attached to a social media account. If you’re on social media, but not using it correctly to engage with your target audience in real-time, then you are not going to receive the best results from it. But a lot of business owners don’t have the time or knowledge to run their social media accounts effectively on their own. That’s where we can help! </p>
+              {% endif %}
             </div>
           </div>
         </div>
 
+
+        <div class="row no-gutters pt-3">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" style="background: url('../../static/assets/img/features.jpg') center center no-repeat; !important"></div>
+          <div class="col-xl-5 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              {% if LANGUAGE_CODE == 'ar' %}
+              <h4> الإعلان عبر وسائل التواصل الاجتماعي</h4>
+
+              <p>
+                من خلال الإعلان عبر وسائل التواصل الاجتماعي ، نستفيد من منصات التواصل الاجتماعي لربط منتجك أو خدمتك بآلاف الأشخاص. نحن نستخدم أساليب مستهدفة للغاية ومحسنة للإعلان على وسائل التواصل الاجتماعي تسمح لعملائنا بتحديد ديموغرافيتهم الدقيقة والوصول إليهم بسعر معقول.  إذن لديك حساب على وسائل التواصل الاجتماعي ولكنك تريد استخدامه لزيادة عدد الزيارات إلى موقع الويب الخاص بك؟ لا توجد مشكلة. الحقيقة هي أن العديد من الشركات موجودة على وسائل التواصل الاجتماعي ، ولكنها لا تدرك قوة إعلان جيد على وسائل التواصل الاجتماعي. 
+              </p>
+              {% else %}
+     
+              <h4>Social Media Advertising </h4>
+
+              <p>So you have a social media account but want to use it to drive more traffic to your website? No problem. The truth is, many businesses are on social media, but aren’t aware of the power of a good social media ad. By advertising through social media, we leverage social media platforms to connect your product or service to thousands of people. We use highly targeted and optimized methods of social media advertising that allow our clients to pinpoint their exact demographic and reach them at an affordable rate. </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="row no-gutters pt-3">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" style="background: url('../../static/assets/img/about.jpg') center center no-repeat; !important"></div>
+          <div class="col-xl-5 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              {% if LANGUAGE_CODE == 'ar' %}
+              <h4> إدارة الأعلان    </h4>
+
+              <p>
+                يبحث الأشخاص عن منتجك أو خدماتك عبر الإنترنت الآن. يستخدمون أماكن مثل Google و Bing و Yahoo للعثور على الشركات ذات الصلة التي تلبي احتياجاتهم. يتيح لك إعلان الدفع لكل نقرة ، الذي يشار إليه أيضًا باسم التسويق عبر محرك البحث (SEM / PPC) ، تشغيل إعلانات على Google تظهر عندما يبحث الأشخاص عن المنتجات والخدمات التي تقدمها.              </p>
+              {% else %}
+     
+              <h4>PPC Management </h4>
+
+              <p>People are searching for your product or services online right now. They are using places like Google, Bing and Yahoo to find relevant companies that meet their needs. Pay-per-click advertising, also referred to as search engine marketing, (SEM/PPC) allows you to run advertisements on Google that show when people are searching for the products and services you offer.</p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters pt-3">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" style="background: url('../../static/assets/img/portfolio/portfolio-7.jpg') center center no-repeat; !important"></div>
+          <div class="col-xl-5 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              {% if LANGUAGE_CODE == 'ar' %}
+              <h4>تحسين محركات البحث</h4>
+
+              <p>
+                كل يوم ، يبحث ملايين الأشخاص عن المنتجات أو الخدمات التي تقدمها. بصفتنا وكالة تسويق رقمية ، نقدم خدمات تحسين محركات البحث (SEO) التي يحتاجها عملك لمساعدة موقع الويب الخاص بك على ترتيب الكلمات الرئيسية الأكثر أهمية لشركتك. إن استخدام هذه الكلمات الرئيسية هو ما يساعد في جذب العملاء المناسبين إلى موقع الويب الخاص بك ومحتويات الوسائط الرقمية الأخرى. هذه الكلمات الرئيسية مهمة لأنها في الأساس هي التي تجعل الاتصال بينك وبين عملائك المحتملين. لذلك عندما يقوم عملاؤك المحتملون بإجراء عمليات بحث باستخدام هذه الكلمات الرئيسية ذات الصلة ، نتأكد من أنهم يرون موقع الويب الخاص بك عندما يفعلون ذلك.              
+              </p>
+              {% else %}
+     
+              <h4>Search Engine Optimization </h4>
+
+              <p>
+                Every day, millions of people search for the products or services you offer. As a digital marketing agency, we offer the SEO services your business needs to help your website rank for the keywords most important to your company. The use of these keywords is what helps drive the right customers to your website and other digital media content. These keywords are important because essentially they are what make the connection between you and your potential customers. So when your prospects are making searches with those relevant keywords, we make sure they see your website when they do
+              </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+    
+        <div class="row no-gutters pt-3">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" style="background: url('../../static/images/back.jpeg') center center no-repeat; !important"></div>
+          <div class="col-xl-5 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              {% if LANGUAGE_CODE == 'ar' %}
+              <h4>تسويق المحتوى
+              </h4>
+
+              <p>
+                نحن نركز على تطوير المحتوى ذي الصلة لإشراك جمهورك. سواء كنت بحاجة إلى استخدام رسوم بيانية أو محتوى تسويقي للفيديو أو محتوى مكتوب ثاقب لموقعك على الويب ، يمكننا تطوير المحتوى المطلوب لجذب العملاء المستهدفين. سيؤدي المحتوى الرائع إلى زيادة حركة المرور على موقع الويب الخاص بك وتسريع دورة رحلة العميل. يعد العمل مع وكالة تسويق رقمية للمحتوى الخاص بك طريقة رائعة لسد الفجوة بين التسويق عبر البريد الإلكتروني وجهود التسويق عبر وسائل التواصل الاجتماعي إلى موقع الويب الخاص بك         
+                   </p>
+              {% else %}
+     
+              <h4>Content Marketing </h4>
+
+              <p>
+                We focus on developing relevant content to engage your audience. Whether you need engaging infographics, video marketing content, or insightful written content for your website, we can develop the content needed to attract your target customers. Great content will increase your website traffic and expedite your customer journey cycle. Working with a digital marketing agency for your content is a great way to bridge the gap between your email marketing and social media marketing efforts to your website                   </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div class="row no-gutters pt-3">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start aos-init aos-animate" data-aos="fade-right" data-aos-delay="100" style="background: url('../../static/assets/img/cta-bg.jpg') center center no-repeat; !important"></div>
+          <div class="col-xl-5 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch aos-init aos-animate" data-aos="fade-left" data-aos-delay="100">
+            <div class="content d-flex flex-column justify-content-center">
+              {% if LANGUAGE_CODE == 'ar' %}
+              <h4>تصميم وتطوير الموقع
+
+              </h4>
+
+              <p>
+                اذكر دائمًا أن تصميمات الويب الخاصة بك تتضمن دائمًا مقاييس CRO (تحسين معدل التحويل) حتى تقوم بتتبع البصيرة القابلة للتنفيذ التي تحتاجها لمعرفة مدى نجاح تحويلات موقع الويب الخاص بك.
+                يمكن للصفحات المقصودة لموقعك الإلكتروني أن تخبر الكثير عن عملك للزائرين في الثواني الخمس الأولى من التواجد فيها. نحن نساعد في توفير إمكانات تصميم وتطوير فعالة ومذهلة لموقعك على الويب. فريقنا من مصممي الويب الداخليين في وكالة التسويق الرقمي لدينا ماهرون في إنشاء مواقع الويب التي تُظهر علامتك التجارية الفريدة وشخصيتك. لا 
+                   </p>
+              {% else %}
+     
+              <h4>Website Design & Development</h4>
+
+              <p>              
+                Your website landing pages can say a lot about your business to your visitors in the first 5 seconds of being on it. We help bring effective and stunning design and development capabilities to your website. Our team of in-house web designers at our digital marketing agency are skilled in creating websites that show your unique brand and personality. Not to 
+                mention your web designs always include CRO metrics (conversion rate optimization) so they are tracking the actionable insight you need in order to know how well your website conversions are doing. 
+              </p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

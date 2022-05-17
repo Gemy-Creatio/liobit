@@ -4,14 +4,22 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-6 col-md-6">
+          <div class="col-lg-6 col-md-12">
             <div class="footer-info">
-<img src="{% static 'images/logo.png' %}" class="img-fluid" style="height: 12vh"/>
+<img src="{% static 'images/logo.png' %}" class="img-fluid" style="width: 5rem;height: 5vh;"/>
+{% if LANGUAGE_CODE == 'ar' %}
               <p>
                 المملكة العربية السعودية<br><br>
                 <strong>هاتف:</strong> +1 5589 55488 55<br>
                 <strong>البريد الألكترونى:</strong> info@example.com<br>
               </p>
+              {% else %}
+              <p>
+                Saudia Arabia<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email :</strong> info@example.com<br>
+              </p>
+              {% endif %}
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -22,12 +30,19 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6 footer-links">
+          <div class="col-lg-6 col-md-12 footer-links">
             <ul>
+              {% if LANGUAGE_CODE == 'ar' %}
               <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home-page' %}">الرئيسية</a></li>
               <li><i class="bx bx-chevron-right"></i> <a  href="{% url 'contact-page' %}">إتصل بنا</a></li>
               <li><i class="bx bx-chevron-right"></i> <a  href="{% url 'about-page' %}">عن الشركة</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">الشروط و الأحكام</a></li>
+              {% else %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home-page' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="{% url 'contact-page' %}">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a  href="{% url 'about-page' %}">About Us </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#"> Privacy and Terms </a></li>
+              {% endif %}
             </ul>
           </div>
 

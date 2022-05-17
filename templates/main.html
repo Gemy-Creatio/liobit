@@ -1,4 +1,8 @@
+{% if LANGUAGE_CODE == 'ar' %}
 <html lang="ar" dir="rtl">
+  {% else %}
+  <html lang="en" dir="ltr">
+  {% endif %}
 {% load static %}
 <head>
   <meta charset="utf-8">
