@@ -144,7 +144,7 @@ font-family: 'Cairo', sans-serif;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: #fff;
+  background: #151515;
 }
 
 #header .logo {
@@ -165,6 +165,10 @@ font-family: 'Cairo', sans-serif;
     height: 40px;
     border-radius: 4px;
     transition: all 0.4s;
+}
+.go-to-whats:hover {
+  background: #ffbb38;
+  color: #343a40;
 }
 
 #header .logo a {
